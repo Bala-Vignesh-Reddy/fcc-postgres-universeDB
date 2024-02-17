@@ -1,0 +1,41 @@
+Command for login in to pySQL
+
+pysql --username=(username) --dbname=(databaseName)
+
+# To list items into pymsql use '\l'
+
+# Always end command with semicolon
+
+For creating database => CREATE DATABASE <name>;
+
+For connecting to a database => \c database_name;
+
+\d is used to display the tables
+
+Creating table => CREATE TABLE table_name();
+
+for adding columns
+    ALTER TABLE table_name ADD COLUMN column_name DATATYPE;
+for deleting columns
+    ALTER TABLE table_name DROP COLUMN column_name;
+for renaming columns
+    ALTER TABLE table_name RENAME COLUMN column_name TO new_name;
+for inserting values
+    ALTER TABLE table_name RENAME COLUMN column_name TO new_name;
+
+for viewing the data 
+    SELECT columns FROM table_name;
+for deleting the row
+    DELETE FROM table_name WHERE condition;
+
+for adding primary key
+    ALTER TABLE table_name add primary key(column);
+for droping primary key
+    ALTER TABLE table_name DROP CONTRAINT characters_pkey;
+
+for foreign key
+    ALTER TABLE table_name ADD COLUMN column_name DATATYPE REFERENCES referenced_table_name(referenced_column_name);
+
+for viewing data from two table
+    SELECT columns FROM table_1 FULL JOIN table_2 ON table_1.primary_key_column = table_2.foreign_key_column;
+
